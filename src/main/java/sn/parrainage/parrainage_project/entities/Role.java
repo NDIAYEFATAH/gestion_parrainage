@@ -7,6 +7,9 @@ public class Role {
     private String name;
     private int etat;
 
+    public Role() {
+    }
+
     public Role(int id, String name, int etat) {
         this.id = id;
         this.name = name;

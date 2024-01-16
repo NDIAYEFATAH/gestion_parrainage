@@ -6,19 +6,19 @@ public class Utilisateur {
     private int id;
     private String nom,prenom,login,password;
     private int actived;
-    private Role role;
+    private Role profile;
 
     public Utilisateur() {
     }
 
-    public Utilisateur(int id, String nom, String prenom, String login, String password, int actived, Role role) {
+    public Utilisateur(int id, String nom, String prenom, String login, String password, int actived, Role profile) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.login = login;
         this.password = password;
         this.actived = actived;
-        this.role = role;
+        this.profile = profile;
     }
 
     public int getId() {
@@ -69,11 +69,11 @@ public class Utilisateur {
         this.actived = actived;
     }
 
-    public Role getRole() {
-        return role;
+    public Role getProfile() {
+        return profile;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
+    public void setProfile(Role profile) {
+        this.profile = profile;
     }
 }

@@ -14,6 +14,8 @@ public class App extends Application {
         stage.setTitle("Connexion");
         stage.setScene(scene);
         stage.show();
+
+        
     }
 
 

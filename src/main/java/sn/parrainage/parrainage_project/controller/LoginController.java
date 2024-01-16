@@ -29,10 +29,10 @@ public class LoginController {
             Utilisateur user = userdao.seConnecter(login, password);
             if(user != null){
                 try {
-                    Notification.NotifSuccess("Succés !", "Connexion réussie !");
-                    if (user.getRole().getName().equalsIgnoreCase("ROLE_ADMIN"))
+//                    Notification.NotifSuccess("Succés !", "Connexion réussie !");
+                    if (user.getProfile().getName().equalsIgnoreCase("ROLE_ADMIN"))
                         Outils.load(event, "Bienvenue", "/pages/admin.fxml");
-                    else if (user.getRole().getName().equalsIgnoreCase("ROLE_CANDIDAT"))
+                    else if (user.getProfile().getName().equalsIgnoreCase("ROLE_CANDIDAT"))
                         Outils.load(event, "Bienvenue", "/pages/candidat.fxml");
                     else
                         Outils.load(event, "Bienvenue", "/pages/electeur.fxml");

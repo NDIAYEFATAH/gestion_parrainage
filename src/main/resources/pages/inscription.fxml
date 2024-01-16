@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="472.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.parrainage.parrainage_project.controller.InscriptionController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="131.0" prefWidth="640.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="516.0" layoutX="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/insr.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="47.0" layoutY="139.0" prefHeight="17.0" prefWidth="98.0" text="Prenom">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="139.0" prefHeight="17.0" prefWidth="98.0" text="Nom">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="prenomtfd" layoutX="47.0" layoutY="187.0" prefHeight="25.0" prefWidth="218.0" />
+      <TextField fx:id="nomtfd" layoutX="301.0" layoutY="187.0" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="47.0" layoutY="236.0" prefHeight="17.0" prefWidth="98.0" text="Identifiant">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="312.0" layoutY="236.0" prefHeight="25.0" prefWidth="114.0" text="Mot de Passe">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="identifianttfd" layoutX="47.0" layoutY="284.0" prefHeight="25.0" prefWidth="218.0" />
+      <Button fx:id="enregistrerBtn" layoutX="400.0" layoutY="412.0" mnemonicParsing="false" onAction="#save" prefHeight="33.0" prefWidth="129.0" style="-fx-background-color: black;" text="S'inscrire" textFill="#f6f6f6" />
+      <Label layoutX="47.0" layoutY="330.0" prefHeight="17.0" prefWidth="98.0" text="Role">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="roleComboBox" layoutX="47.0" layoutY="368.0" prefHeight="25.0" prefWidth="218.0" />
+      <PasswordField fx:id="passwordtfd" layoutX="301.0" layoutY="284.0" prefHeight="25.0" prefWidth="218.0" />
+   </children>
 </AnchorPane>

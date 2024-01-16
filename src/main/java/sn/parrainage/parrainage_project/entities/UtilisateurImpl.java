@@ -30,9 +30,9 @@ public class UtilisateurImpl implements IUser {
 //                user.setPassword(rs.getString("password"));
                 user.setActived(rs.getInt("actived"));
                 IRole iRole = new RoleImpl();
-                int idRole = rs.getInt("role");
+                int idRole = rs.getInt("profil");
                 Role role = iRole.getRoleById(idRole);
-                user.setRole(role);
+                user.setProfile(role);
             }
             db.closeConnection();
         }catch (Exception e)
