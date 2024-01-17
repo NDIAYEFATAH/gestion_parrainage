@@ -33,3 +33,7 @@
     -fx-background-color: #EC505C;
     -fx-background-radius: 10;
 }
+.form_container {
+    -fx-font-size: 1.2sem;
+    -fx-fill: #888888;
+}

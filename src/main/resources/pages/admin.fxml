@@ -54,11 +54,7 @@
                         <Image url="@../images/can.jpg" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="21.0" prefWidth="132.0" text="Gestion Candidats">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
+                  <Button fx:id="listerElect" mnemonicParsing="false" onAction="#listerElect" prefHeight="31.0" prefWidth="125.0" text="Lister Electeurs" />
                </children>
                <padding>
                   <Insets left="20.0" right="20.0" />

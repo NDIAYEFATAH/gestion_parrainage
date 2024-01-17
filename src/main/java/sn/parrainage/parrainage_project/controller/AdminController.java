@@ -17,6 +17,9 @@ public class AdminController {
     private Button ajoutUserBtn;
 
     @FXML
+    private Button listerElect;
+
+    @FXML
     void ajoutUser(ActionEvent event) throws IOException {
         // Charger le fichier FXML de la nouvelle page
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/pages/inscription.fxml"));
@@ -33,5 +36,22 @@ public class AdminController {
         // Afficher la nouvelle fenêtre
         stage.show();
 
+    }
+    @FXML
+    void listerElect(ActionEvent event) throws IOException {
+        // Charger le fichier FXML de la nouvelle page
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/pages/listeElecteur.fxml"));
+        Parent root = loader.load();
+
+        // Créer une nouvelle scène
+        Scene scene = new Scene(root);
+
+        // Créer une nouvelle étape (stage) pour la nouvelle scène
+        Stage stage = new Stage();
+        stage.setTitle("Liste Des Electeurs"); // Titre de la nouvelle fenêtre
+        stage.setScene(scene);
+
+        // Afficher la nouvelle fenêtre
+        stage.show();
     }
 }

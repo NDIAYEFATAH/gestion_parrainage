@@ -16,6 +16,10 @@ public class Role {
         this.etat = etat;
     }
 
+    public Role(int id) {
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
@@ -38,5 +42,8 @@ public class Role {
 
     public void setEtat(int etat) {
         this.etat = etat;
+    }
+    public String toString() {
+        return name;
     }
 }
