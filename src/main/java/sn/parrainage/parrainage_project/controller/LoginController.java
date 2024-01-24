@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import sn.parrainage.parrainage_project.entities.SessionManager;
 import sn.parrainage.parrainage_project.entities.Utilisateur;
 import sn.parrainage.parrainage_project.entities.UtilisateurImpl;
 import sn.parrainage.parrainage_project.repositories.IUser;
@@ -35,7 +36,8 @@ public class LoginController {
                     else if (user.getProfile().getName().equalsIgnoreCase("ROLE_CANDIDAT"))
                         Outils.load(event, "Bienvenue", "/pages/candidat.fxml");
                     else
-                        Outils.load(event, "Bienvenue", "/pages/electeur.fxml");
+                        Outils.load(event, "Bienvenue", "/pages/electeurDashboard.fxml");
+                    SessionManager.setCurrentUserId(user);
                 }catch (Exception e){
                     e.printStackTrace();
                 }

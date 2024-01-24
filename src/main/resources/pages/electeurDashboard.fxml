@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.parrainage.parrainage_project.controller.ElecteurDashboardController">
+   <children>
+      <Label layoutX="231.0" layoutY="14.0" prefHeight="35.0" prefWidth="124.0" text="Parrainage">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="parrainageTbl" layoutX="58.0" layoutY="81.0" prefHeight="242.0" prefWidth="472.0">
+        <columns>
+          <TableColumn fx:id="prenomCan" prefWidth="165.99996948242188" text="Prenom" />
+          <TableColumn fx:id="nomCand" prefWidth="164.66668701171875" text="Nom" />
+            <TableColumn fx:id="idCand" prefWidth="146.66668701171875" text="Id" />
+        </columns>
+      </TableView>
+      <Button fx:id="parrainCandidat" layoutX="406.0" layoutY="346.0" mnemonicParsing="false" onAction="#parrainCandi" prefHeight="35.0" prefWidth="124.0" text="Parrainer" />
+   </children>
+</AnchorPane>

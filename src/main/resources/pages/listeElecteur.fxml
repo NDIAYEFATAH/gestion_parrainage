@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="554.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.parrainage.parrainage_project.controller.ListeElecteurController">
    <children>
       <Label layoutX="265.0" layoutY="28.0" prefHeight="27.0" prefWidth="163.0" text="Liste des Electeurs">
@@ -23,10 +22,11 @@
             <TableColumn fx:id="profileElec" prefWidth="263.999989827474" text="Profile" />
         </columns>
       </TableView>
-      <ButtonBar layoutX="550.0" layoutY="416.0" prefHeight="40.0" prefWidth="200.0">
+      <ButtonBar layoutX="443.0" layoutY="416.0" prefHeight="40.0" prefWidth="307.0">
         <buttons>
-          <Button fx:id="supprimerBtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="163.0" style="-fx-background-color: red;" text="Supprimer" />
-            <Button fx:id="modifierBtn" mnemonicParsing="false" style="-fx-background-color: blue;" text="Modifier" />
+          <Button fx:id="supprimerBtn" mnemonicParsing="false" prefHeight="31.0" prefWidth="163.0" text="Supprimer" />
+            <Button fx:id="modifierBtn" mnemonicParsing="false" prefHeight="35.0" text="Modifier" />
+            <Button fx:id="DesactiverBtn" mnemonicParsing="false" onAction="#desactiver" prefHeight="31.0" prefWidth="163.0" style="-fx-background-color: red;" />
         </buttons>
       </ButtonBar>
    </children>
